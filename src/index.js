@@ -143,8 +143,8 @@ module.exports = class WebpackAliOSSPlugin {
               log(`上传成功 ${idx}/${fileCount}: ${uploadName}`)
               self.config.removeMode && delete compilation.assets[file.name]
               // 如果设置了 acl 则会在上传成功后修改文件的访问权限
-              if (this.config.acl) {
-                self.client.putACL(uploadName, this.config.acl).then(() => resolve())
+              if (self.config.acl) {
+                self.client.putACL(uploadName, self.config.acl).then(() => resolve())
               } else {
                 resolve()
               }
