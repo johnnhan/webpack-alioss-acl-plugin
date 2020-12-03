@@ -1,0 +1,27 @@
+{
+  "name": "webpack-alioss-acl-plugin",
+  "version": "0.1.0",
+  "description": "Ali oss-webpack auto upload files plugin with acl options",
+  "homepage": "http://www.johnhan.cn/",
+  "repository": "https://github.com/johnnhan/webpack-alioss-acl-plugin.git",
+  "license": "MIT",
+  "author": "Johnhan",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib"
+  },
+  "dependencies": {
+    "ali-oss": "^6.1.0",
+    "babel-runtime": "^6.26.0",
+    "chalk": "^2.4.2",
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}
