@@ -14,7 +14,7 @@ npm install -D webpack-alioss-acl-plugin
 ## 使用示例 - vue.config.js 示例
 
 ```js
-const WebpackAliossPlugin = require('webpack-alioss-plugin');
+const WebpackAliossPlugin = require('webpack-alioss-acl-plugin');
 const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
